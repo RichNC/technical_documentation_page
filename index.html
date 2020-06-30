@@ -4,27 +4,26 @@
   <meta charset="UTF-8">
   <title>FCC: Technical Documentation Page</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 </head>
 <body>
   <nav id="navbar">
-    <header>
-      <h1>JS Documentation</h1>
-    </header>
+    <header>JS Documentation</header>
     <ul>
-      <li class="nav-link"><a href="#">Introduction</a></li>
-      <li class="nav-link"><a href="#">What you should already know</a></li>
-      <li class="nav-link"><a href="#">JavaScript and Java</a></li>
-      <li class="nav-link"><a href="#">Hello world</a></li>
-      <li class="nav-link"><a href="#">Variables</a></li>
-      <li class="nav-link"><a href="#">Declaring variables</a></li>
-      <li class="nav-link"><a href="#">Variable scope</a></li>
-      <li class="nav-link"><a href="#">Global variables</a></li>
-      <li class="nav-link"><a href="#">Constants</a></li>
-      <li class="nav-link"><a href="#">Data types</a></li>
-      <li class="nav-link"><a href="#">if...else statement</a></li>
-      <li class="nav-link"><a href="#">while statement</a></li>
-      <li class="nav-link"><a href="#">Function declarations</a></li>
-      <li class="nav-link"><a href="#">Reference</a></li>
+      <li class="nav-link"><a href="#introduction">Introduction</a></li>
+      <li class="nav-link"><a href="#what_you_should_already_know">What you should already know</a></li>
+      <li class="nav-link"><a href="#javaScript_and_java">JavaScript and Java</a></li>
+      <li class="nav-link"><a href="#hello_world">Hello world</a></li>
+      <li class="nav-link"><a href="#variables">Variables</a></li>
+      <li class="nav-link"><a href="#declaring_variables">Declaring variables</a></li>
+      <li class="nav-link"><a href="#variable_scope">Variable scope</a></li>
+      <li class="nav-link"><a href="#global_variables">Global variables</a></li>
+      <li class="nav-link"><a href="#constants">Constants</a></li>
+      <li class="nav-link"><a href="#data_types">Data types</a></li>
+      <li class="nav-link"><a href="#if_else_statement">if...else statement</a></li>
+      <li class="nav-link"><a href="#while_statement">while statement</a></li>
+      <li class="nav-link"><a href="#function_declarations">Function declarations</a></li>
+      <li class="nav-link"><a href="#reference">Reference</a></li>
     </ul>
   </nav>
   <main id="main-doc">
@@ -39,7 +38,6 @@
         <li>Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.</li>
       </ul>
     </section>
-  <main id="main-doc">
     <section class="main-section" id="what_you_should_already_know">
       <header>
         <h1>What you should already know</h1>
@@ -51,7 +49,6 @@
         <li>Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.</li>
       </ul>
     </section>
-  <main id="main-doc">
     <section class="main-section" id="javaScript_and_java">
       <header>
         <h1>JavaScript and Java</h1>
@@ -60,7 +57,6 @@
       <p>In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.</p>
       <p>JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.</p>
     </section>
-  <main id="main-doc">
     <section class="main-section" id="hello_world">
       <header>
         <h1>Hello world</h1>
@@ -70,7 +66,6 @@
 greetMe("World");</code>
       <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
     </section>
-  <main id="main-doc">
     <section class="main-section" id="variables">
       <header>
         <h1>Variables</h1>
@@ -79,8 +74,6 @@ greetMe("World");</code>
       <p>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).</p>
       <p>You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name.</p>
     </section>
-  </main>
-  <main id="main-doc">
     <section class="main-section" id="declaring_variables">
       <header><h1>Declaring variables</h1></header>
       <p>You can declare a variable in three ways:</p>
@@ -94,8 +87,6 @@ greetMe("World");</code>
       <code> let y = 13.</code>
       <p>This syntax can be used to declare a block scope local variable. See Variable scope below.</p>
     </section>
-  </main>
-  <main id="main-doc">
     <section class="main-section" id="variable_scope">
       <header><h1>Variable scope</h1></header>
       <p>When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.</p>
@@ -104,15 +95,11 @@ greetMe("World");</code>
       <p>This behavior changes, when using the let declaration introduced in ECMAScript 2015.</p>
       <code>if (true) { let y = 5; } console.log(y); // ReferenceError: y is not<br>defined</code>
     </section>
-  </main>
-  <main id="main-doc">
     <section class="main-section" id="global_variables">
       <header><h1>Global variables</h1></header>
       <p>Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax.</p>
       <p>Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.</p>
     </section>
-  </main>
-  <main id="main-doc">
     <section class="main-section" id="constants">
       <header><h1>Constants</h1></header>
       <p>You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.</p>
@@ -124,8 +111,6 @@ greetMe("World");</code>
       <p>However, object attributes are not protected, so the following statement is executed without problems.</p>
       <code>const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";</code>
     </section>
-  </main>
-  <main id="main-doc">
     <section class="main-section" id="data_types">
       <header><h1>Data types</h1></header>
       <p>The latest ECMAScript standard defines seven data types:</p>
@@ -143,8 +128,6 @@ greetMe("World");</code>
       </ul>
       <p>Although these data types are a relatively small amount, they enable you to perform useful functions with your applications. Objects and functions are the other fundamental elements in the language. You can think of objects as named containers for values, and functions as procedures that your application can perform.</p>
     </section>
-  </main>
-  <main id="main-doc">
     <section class="main-section" id="if_else_statement">
       <header><h1>if...else statement</h1></header>
       <p>Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false. An if statement looks as follows:</p>
@@ -159,8 +142,6 @@ greetMe("World");</code>
       <p>If you need to use an assignment in a conditional expression, a common practice is to put additional parentheses around the assignment. For example:</p>
       <code>if ((x = y)) { /* statements here */ }</code>
     </section>
-  </main>
-  <main id="main-doc">
     <section class="main-section" id="while_statement">
       <header><h1>while statement</h1></header>
       <p>A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows:</p>
@@ -179,8 +160,6 @@ greetMe("World");</code>
       </ul>
       <p>After completing the third pass, the condition n < 3 is no longer true, so the loop terminates.</p>
     </section>
-  </main>
-  <main id="main-doc">
     <section class="main-section" id="function_declarations">
       <header><h1>Function declarations</h1></header>
       <p>A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:</p>
@@ -195,8 +174,6 @@ greetMe("World");</code>
       <code>return number * number;</code>
       <p>Primitive parameters (such as a number) are passed to functions by value; the value is passed to the function, but if the function changes the value of the parameter, this change is not reflected globally or in the calling function.</p>
     </section>
-  </main>
-  <main id="main-doc">
     <section class="main-section" id="reference">
       <header><h1>Reference</h1></header>
       <ul>
