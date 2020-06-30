@@ -1,6 +1,7 @@
 body, html, ul {
   font-family: "Open Sans", Arial, sans-serif;
   margin: 0;
+  line-height: 1.5;
 }
 
 a {
@@ -9,38 +10,78 @@ a {
 }
 
 nav {
-  border-right: 1px solid black;
   max-height: 100%;
   overflow-y: auto;
+}
+
+code {
+  display: block;
+  margin: 10px 30px;
+  padding: 15px;
+  background-color: #f7f7f7;
+}
+
+main {
+  margin-bottom: 200px;
+
+}
+
+header {
+  font-size: 1.8em;
 }
 
 #navbar {
   position: fixed;
   width: 300px;
-
+  border-right: solid;
+  border-color: gray;
 }
 
 #navbar header {
+  position: fixed;
   text-align: center;
   font-size: 1.8em;
   padding: 15px;
+  display: flex;
+  z-index: 1;
+  background-color: #ffffff;
 }
 
 #navbar ul {
   padding: 0;
-
-
-
+  position: relative;
+  top: 75px;
 }
 #navbar li {
   list-style: none;
-  border-top: 1px solid black;
   padding: 15px;
   text-decoration: none;
-
 }
 
 #main-doc {
   position: absolute;
   margin-left: 320px;
 }
+
+@media (max-width: 700px) {
+  #navbar {
+    position: static;
+    width: 100%;
+  }
+  #main-doc {
+    position: static;
+    margin-left: 0;
+  }
+  nav {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  #navbar header {
+    justify-content: center;
+    width: 100%;
+  }
+  #navbar li {
+    border: 1px solid gray;
+  }
+}
+
